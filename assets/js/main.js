@@ -1,4 +1,4 @@
-let currentLang = "id"; // default bahasa
+let currentLang = "id"; // default
 
 // Load JSON
 async function loadJSON(path) {
@@ -12,26 +12,19 @@ async function loadJSON(path) {
   }
 }
 
-// Fallback image
-function getImageWithFallback(src, title) {
-  return `<img src="${src}" class="card-img-top" alt="${title}"
-            onerror="this.onerror=null;this.src='assets/img/no-image.png';">`;
-}
-
 // Render konten utama
 function renderContent(data) {
   if (!data) return;
 
-  // Navbar
-  document.querySelector("#company-name").innerText = data.hero.title;
-  document.querySelector("#nav-home").innerText = data.nav.home;
-  document.querySelector("#nav-about").innerText = data.nav.about;
-  document.querySelector("#nav-products").innerText = data.nav.products;
-  document.querySelector("#nav-contact").innerText = data.nav.contact;
+  // Navbar + Footer
+  document.querySelector("#nav-company").innerText = data.company;
+  document.querySelector("#site-title").innerText = data.company;
+  document.querySelector("#footer-company").innerText = data.company;
 
   // Hero
   document.querySelector("#hero-title").innerText = data.hero.title;
   document.querySelector("#hero-subtitle").innerText = data.hero.subtitle;
+  document.querySelector("#hero-hook").innerText = data.hero.hook;
   document.querySelector("#hero-cta").innerText = data.hero.cta;
 
   // About
@@ -40,6 +33,24 @@ function renderContent(data) {
 
   // Products
   document.querySelector("#products-title").innerText = data.products;
+
+  // Testimonials
+  document.querySelector("#testimonials-title").innerText =
+    data.testimonials.title;
+  const testiContainer = document.querySelector("#testimonials-list");
+  testiContainer.innerHTML = "";
+  data.testimonials.items.forEach((t, idx) => {
+    const div = document.createElement("div");
+    div.classList.add("carousel-item", ...(idx === 0 ? ["active"] : []));
+    div.innerHTML = `
+      <div class="d-flex flex-column align-items-center">
+        <blockquote class="blockquote text-center">
+          <p class="mb-3">“${t.quote}”</p>
+          <footer class="blockquote-footer">${t.name}</footer>
+        </blockquote>
+      </div>`;
+    testiContainer.appendChild(div);
+  });
 
   // Contact
   document.querySelector("#contact-title").innerText = data.contact.title;
@@ -52,14 +63,8 @@ function renderContent(data) {
   document.querySelector("#contact-email-label").innerText =
     data.contact.emailLabel;
   document.querySelector("#contact-email").innerText = data.contact.email;
-
   document.querySelector("#contact-whatsapp").href = data.contact.whatsapp;
   document.querySelector("#contact-maps").src = data.contact.maps;
-
-  // Footer
-  document.querySelector(
-    "#footer-text"
-  ).innerText = `${new Date().getFullYear()} ${data.hero.title}`;
 }
 
 // Render produk
@@ -70,10 +75,11 @@ function renderProducts(products) {
 
   products.forEach((p) => {
     const card = document.createElement("div");
-    card.classList.add("col-md-4", "mb-4");
+    card.classList.add("col-md-6", "mb-4");
     card.innerHTML = `
       <div class="card h-100 shadow-sm">
-        ${getImageWithFallback(p.img, p.title)}
+        <img src="${p.img}" class="card-img-top" alt="${p.title}"
+          onerror="this.onerror=null;this.src='assets/img/no-image.png';">
         <div class="card-body">
           <h5 class="card-title">${p.title}</h5>
           <p class="card-text">${p.desc}</p>
