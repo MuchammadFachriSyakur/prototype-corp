@@ -1,0 +1,60 @@
+{
+  "id": {
+    "nav": {
+      "home": "Beranda",
+      "about": "Tentang",
+      "products": "Produk",
+      "contact": "Kontak"
+    },
+    "hero": {
+      "title": "SawitCorp",
+      "subtitle": "Mitra Terpercaya dalam Industri Kelapa Sawit",
+      "cta": "Pelajari Lebih Lanjut"
+    },
+    "about": {
+      "title": "Tentang Kami",
+      "desc": "SawitCorp adalah perusahaan yang bergerak di bidang perkebunan dan pengolahan kelapa sawit, menyediakan produk berkualitas tinggi untuk pasar lokal dan internasional."
+    },
+    "products": "Produk",
+    "contact": {
+      "title": "Kontak Kami",
+      "addressLabel": "Alamat:",
+      "address": "Jl. Perkebunan Sawit No. 123, Riau, Indonesia",
+      "phoneLabel": "Telp:",
+      "phone": "+62 812 3456 7890",
+      "emailLabel": "Email:",
+      "email": "info@sawitcorp.co.id",
+      "whatsapp": "https://wa.me/6281234567890",
+      "maps": "https://www.google.com/maps/embed?...etc..."
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "products": "Products",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "SawitCorp",
+      "subtitle": "Your Trusted Partner in Palm Oil Industry",
+      "cta": "Learn More"
+    },
+    "about": {
+      "title": "About Us",
+      "desc": "SawitCorp is a company engaged in palm oil plantations and processing, providing high-quality products for local and international markets."
+    },
+    "products": "Products",
+    "contact": {
+      "title": "Contact Us",
+      "addressLabel": "Address:",
+      "address": "Jl. Perkebunan Sawit No. 123, Riau, Indonesia",
+      "phoneLabel": "Phone:",
+      "phone": "+62 812 3456 7890",
+      "emailLabel": "Email:",
+      "email": "info@sawitcorp.co.id",
+      "whatsapp": "https://wa.me/6281234567890",
+      "maps": "https://www.google.com/maps/embed?...etc..."
+    }
+  }
+}

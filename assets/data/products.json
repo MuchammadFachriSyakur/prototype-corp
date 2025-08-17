@@ -1,0 +1,26 @@
+{
+  "id": [
+    {
+      "title": "Cangkang Kelapa Sawit",
+      "desc": "Cangkang kelapa sawit berkualitas sebagai bahan bakar alternatif ramah lingkungan.",
+      "img": "assets/img/products/palm-kernel-expeller.jpg"
+    },
+    {
+      "title": "Bungkil Kelapa Sawit",
+      "desc": "Bungkil kelapa sawit sebagai bahan baku utama pakan ternak dengan kandungan protein tinggi.",
+      "img": "assets/img/products/cpo.jpg"
+    }
+  ],
+  "en": [
+    {
+      "title": "Palm Kernel Shell",
+      "desc": "High quality palm kernel shell as an eco-friendly alternative fuel.",
+      "img": "assets/img/products/palm-kernel-expeller.jpg"
+    },
+    {
+      "title": "Palm Kernel Expeller (PKE)",
+      "desc": "Palm kernel expeller as the main raw material for animal feed with high protein content.",
+      "img": "assets/img/products/cpo.jpg"
+    }
+  ]
+}
