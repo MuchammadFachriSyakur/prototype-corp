@@ -2,45 +2,19 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SawitCorp - Company Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="site-title">Sawit Corp</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <style>
-      body {
-        scroll-behavior: smooth;
-      }
-      #hero {
-        background: url("assets/img/hero.jpg") center/cover no-repeat;
-        color: white;
-        padding: 120px 0;
-        text-align: center;
-        position: relative;
-      }
-      #hero::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-      }
-      #hero .container {
-        position: relative;
-        z-index: 2;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- ✅ Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#" id="company-name"
-          >Nama Perusahaan</a
-        >
+        <a class="navbar-brand fw-bold" href="#" id="nav-company">Sawit Corp</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -49,11 +23,11 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#hero" id="nav-home">Home</a>
-            </li>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#about" id="nav-about">Tentang</a>
             </li>
@@ -61,14 +35,19 @@
               <a class="nav-link" href="#products" id="nav-products">Produk</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#testimonials" id="nav-testimonials"
+                >Testimoni</a
+              >
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact" id="nav-contact">Kontak</a>
             </li>
           </ul>
           <div class="ms-3">
-            <button class="btn btn-sm btn-outline-light me-2" id="btn-lang-id">
+            <button id="btn-lang-id" class="btn btn-sm btn-outline-light me-2">
               ID
             </button>
-            <button class="btn btn-sm btn-outline-light" id="btn-lang-en">
+            <button id="btn-lang-en" class="btn btn-sm btn-outline-light">
               EN
             </button>
           </div>
@@ -76,77 +55,128 @@
       </div>
     </nav>
 
-    <!-- Hero -->
-    <section id="hero">
+    <!-- ✅ Hero Section -->
+    <section
+      class="vh-100 d-flex align-items-center text-center text-white hero-section"
+      style="background: url('assets/img/hero.jpg') center/cover no-repeat"
+    >
       <div class="container">
-        <h1 id="hero-title">Judul Hero</h1>
-        <p id="hero-subtitle" class="lead">Subjudul Hero</p>
-        <a href="#about" class="btn btn-warning btn-lg" id="hero-cta"
-          >Pelajari Lebih Lanjut</a
+        <h1 class="display-3 fw-bold" id="hero-title">Sawit Corp</h1>
+        <p class="lead mt-3" id="hero-subtitle">
+          Mitra terbaik untuk kelapa sawit berkualitas
+        </p>
+        <p class="mt-2 fw-semibold" id="hero-hook">
+          Solusi sawit dari hulu ke hilir
+        </p>
+        <a href="#contact" class="btn btn-lg btn-warning mt-4" id="hero-cta"
+          >Hubungi Kami</a
         >
       </div>
     </section>
 
-    <!-- About -->
+    <!-- ✅ About -->
     <section id="about" class="py-5">
-      <div class="container">
-        <h2 id="about-title" class="text-center mb-4">Tentang Kami</h2>
-        <p id="about-desc" class="text-center"></p>
+      <div class="container text-center">
+        <h2 class="mb-4" id="about-title">Tentang Kami</h2>
+        <p id="about-desc">
+          Kami menyediakan produk sawit berkualitas tinggi...
+        </p>
       </div>
     </section>
 
-    <!-- Products -->
+    <!-- ✅ Products -->
     <section id="products" class="py-5 bg-light">
       <div class="container">
-        <h2 id="products-title" class="text-center mb-4">Produk</h2>
+        <h2 class="text-center mb-5" id="products-title">Produk</h2>
         <div class="row" id="products-list"></div>
       </div>
     </section>
+    
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 id="testimonials-title" class="mb-4">Testimoni</h2>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" id="testimonials-list">
+            <div class="carousel-item active">
+              <blockquote class="blockquote">
+                <p>"Produk sangat berkualitas, pelayanan ramah dan cepat."</p>
+                <footer class="blockquote-footer">
+                  Andi, Pengusaha Pakan Ternak
+                </footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                <p>"Kerja sama yang profesional, sangat direkomendasikan!"</p>
+                <footer class="blockquote-footer">
+                  Budi, Distributor Minyak
+                </footer>
+              </blockquote>
+            </div>
+          </div>
 
-    <!-- Contact -->
-    <section id="contact" class="py-5">
-      <div class="container">
-        <h2 id="contact-title" class="text-center mb-4">Kontak</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <p>
-              <strong id="contact-address-label">Alamat:</strong>
-              <span id="contact-address"></span>
-            </p>
-            <p>
-              <strong id="contact-phone-label">Telp:</strong>
-              <span id="contact-phone"></span>
-            </p>
-            <p>
-              <strong id="contact-email-label">Email:</strong>
-              <span id="contact-email"></span>
-            </p>
-            <a
-              id="contact-whatsapp"
-              class="btn btn-success me-2"
-              target="_blank"
-              >WhatsApp</a
-            >
-          </div>
-          <div class="col-md-6">
-            <iframe
-              id="contact-maps"
-              width="100%"
-              height="250"
-              style="border: 0"
-              allowfullscreen
-              loading="lazy"
-            ></iframe>
-          </div>
+          <!-- Custom prev/next -->
+          <button
+            class="carousel-control-prev custom-control"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button
+            class="carousel-control-next custom-control"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
       </div>
     </section>
 
+    <!-- ✅ Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4" id="contact-title">Kontak</h2>
+        <p>
+          <strong id="contact-address-label">Alamat:</strong>
+          <span id="contact-address"></span>
+        </p>
+        <p>
+          <strong id="contact-phone-label">Telp:</strong>
+          <span id="contact-phone"></span>
+        </p>
+        <p>
+          <strong id="contact-email-label">Email:</strong>
+          <span id="contact-email"></span>
+        </p>
+        <div class="ratio ratio-16x9 mt-3">
+          <iframe
+            id="contact-maps"
+            style="border: 0"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <a id="contact-whatsapp" class="btn btn-success mt-3" target="_blank"
+          >Chat via WhatsApp</a
+        >
+      </div>
+    </section>
+
     <footer class="bg-dark text-white text-center py-3">
-      &copy; <span id="footer-text">Undefined</span>
+      &copy; <span id="footer-company">Sawit Corp</span> 2025. All Rights
+      Reserved.
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
