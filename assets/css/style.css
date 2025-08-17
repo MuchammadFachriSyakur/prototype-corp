@@ -24,27 +24,33 @@ body {
   z-index: 1;
 }
 
-/* Overlay hitam transparan */
 .hero-section::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.45
-  ); /* ubah angka terakhir (0.45) buat atur gelap/terang */
-  z-index: -1; /* supaya overlay ada di bawah teks */
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* dark overlay */
+  z-index: -1;
 }
 
-/* Biar teks tetap kebaca di semua background */
-.hero-section h1,
+.hero-section h1 {
+  font-size: 3.5rem; /* lebih besar untuk fokus */
+  line-height: 1.2;
+}
+
 .hero-section p {
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.hero-section #hero-cta {
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero-section #hero-cta:hover {
+  background-color: #e0a800; /* hover lebih gelap */
+  transform: translateY(-3px);
 }
 
 .card img {
