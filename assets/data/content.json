@@ -1,23 +1,32 @@
 {
   "id": {
-    "nav": {
-      "home": "Beranda",
-      "about": "Tentang",
-      "products": "Produk",
-      "contact": "Kontak"
-    },
+    "company": "Sawit Corp",
     "hero": {
-      "title": "SawitCorp",
-      "subtitle": "Mitra Terpercaya dalam Industri Kelapa Sawit",
-      "cta": "Pelajari Lebih Lanjut"
+      "title": "Sawit Corp",
+      "subtitle": "Mitra terbaik untuk kelapa sawit berkualitas",
+      "hook": "Solusi sawit dari hulu ke hilir",
+      "cta": "Hubungi Kami"
     },
     "about": {
       "title": "Tentang Kami",
-      "desc": "SawitCorp adalah perusahaan yang bergerak di bidang perkebunan dan pengolahan kelapa sawit, menyediakan produk berkualitas tinggi untuk pasar lokal dan internasional."
+      "desc": "Kami adalah perusahaan yang bergerak di bidang kelapa sawit, menyediakan produk berkualitas tinggi untuk kebutuhan pangan, industri, dan pakan ternak."
     },
     "products": "Produk",
+    "testimonials": {
+      "title": "Testimoni",
+      "items": [
+        {
+          "quote": "Produk berkualitas, pelayanan sangat baik!",
+          "name": "Pak Budi, Riau"
+        },
+        {
+          "quote": "Mitra terpercaya untuk kebutuhan pabrik kami.",
+          "name": "Ibu Sari, Jakarta"
+        }
+      ]
+    },
     "contact": {
-      "title": "Kontak Kami",
+      "title": "Kontak",
       "addressLabel": "Alamat:",
       "address": "Jl. Perkebunan Sawit No. 123, Riau, Indonesia",
       "phoneLabel": "Telp:",
@@ -25,28 +34,37 @@
       "emailLabel": "Email:",
       "email": "info@sawitcorp.co.id",
       "whatsapp": "https://wa.me/6281234567890",
-      "maps": "https://www.google.com/maps/embed?...etc..."
+      "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126750.62347854523!2d109.52684038646841!3d-6.895748860045901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70242ca490fe13%3A0xc0c68a126b258cb6!2sPekalongan%2C%20Pekalongan%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1755424753837!5m2!1sen!2sid"
     }
   },
   "en": {
-    "nav": {
-      "home": "Home",
-      "about": "About",
-      "products": "Products",
-      "contact": "Contact"
-    },
+    "company": "Sawit Corp",
     "hero": {
-      "title": "SawitCorp",
-      "subtitle": "Your Trusted Partner in Palm Oil Industry",
-      "cta": "Learn More"
+      "title": "Sawit Corp",
+      "subtitle": "Your trusted partner for high-quality palm products",
+      "hook": "Palm solutions from upstream to downstream",
+      "cta": "Contact Us"
     },
     "about": {
       "title": "About Us",
-      "desc": "SawitCorp is a company engaged in palm oil plantations and processing, providing high-quality products for local and international markets."
+      "desc": "We are a company engaged in palm oil industry, providing high-quality products for food, industry, and animal feed."
     },
-    "products": "Products",
+    "products": "Product",
+    "testimonials": {
+      "title": "Testimonials",
+      "items": [
+        {
+          "quote": "High quality products, excellent service!",
+          "name": "Mr. John, Singapore"
+        },
+        {
+          "quote": "A reliable partner for our factory needs.",
+          "name": "Ms. Sarah, Malaysia"
+        }
+      ]
+    },
     "contact": {
-      "title": "Contact Us",
+      "title": "Contact",
       "addressLabel": "Address:",
       "address": "Jl. Perkebunan Sawit No. 123, Riau, Indonesia",
       "phoneLabel": "Phone:",
@@ -54,7 +72,7 @@
       "emailLabel": "Email:",
       "email": "info@sawitcorp.co.id",
       "whatsapp": "https://wa.me/6281234567890",
-      "maps": "https://www.google.com/maps/embed?...etc..."
+      "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126750.62347854523!2d109.52684038646841!3d-6.895748860045901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70242ca490fe13%3A0xc0c68a126b258cb6!2sPekalongan%2C%20Pekalongan%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1755424753837!5m2!1sen!2sid"
     }
   }
 }
