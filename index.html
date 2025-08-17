@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SawitCorp - Company Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        scroll-behavior: smooth;
+      }
+      #hero {
+        background: url("assets/img/hero.jpg") center/cover no-repeat;
+        color: white;
+        padding: 120px 0;
+        text-align: center;
+        position: relative;
+      }
+      #hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      #hero .container {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#" id="company-name"
+          >Nama Perusahaan</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero" id="nav-home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" id="nav-about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products" id="nav-products">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" id="nav-contact">Kontak</a>
+            </li>
+          </ul>
+          <div class="ms-3">
+            <button class="btn btn-sm btn-outline-light me-2" id="btn-lang-id">
+              ID
+            </button>
+            <button class="btn btn-sm btn-outline-light" id="btn-lang-en">
+              EN
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="container">
+        <h1 id="hero-title">Judul Hero</h1>
+        <p id="hero-subtitle" class="lead">Subjudul Hero</p>
+        <a href="#about" class="btn btn-warning btn-lg" id="hero-cta"
+          >Pelajari Lebih Lanjut</a
+        >
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 id="about-title" class="text-center mb-4">Tentang Kami</h2>
+        <p id="about-desc" class="text-center"></p>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-5 bg-light">
+      <div class="container">
+        <h2 id="products-title" class="text-center mb-4">Produk</h2>
+        <div class="row" id="products-list"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 id="contact-title" class="text-center mb-4">Kontak</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              <strong id="contact-address-label">Alamat:</strong>
+              <span id="contact-address"></span>
+            </p>
+            <p>
+              <strong id="contact-phone-label">Telp:</strong>
+              <span id="contact-phone"></span>
+            </p>
+            <p>
+              <strong id="contact-email-label">Email:</strong>
+              <span id="contact-email"></span>
+            </p>
+            <a
+              id="contact-whatsapp"
+              class="btn btn-success me-2"
+              target="_blank"
+              >WhatsApp</a
+            >
+          </div>
+          <div class="col-md-6">
+            <iframe
+              id="contact-maps"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      &copy; <span id="footer-text">Undefined</span>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
