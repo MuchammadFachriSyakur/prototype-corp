@@ -22,5 +22,29 @@
       "desc": "Palm kernel expeller with high protein content for animal feed.",
       "img": "assets/img/products/palm-kernel-expeller.jpg"
     }
+  ],
+  "zh": [
+    {
+      "title": "棕榈壳",
+      "desc": "高品质棕榈壳，作为环保替代燃料。",
+      "img": "assets/img/products/cpo.jpg"
+    },
+    {
+      "title": "棕榈仁粕",
+      "desc": "高蛋白含量的棕榈仁粕，用于动物饲料。",
+      "img": "assets/img/products/palm-kernel-expeller.jpg"
+    }
+  ],
+  "ja": [
+    {
+      "title": "パームカーネルシェル",
+      "desc": "環境に優しい代替燃料としての高品質パームカーネルシェル。",
+      "img": "assets/img/products/cpo.jpg"
+    },
+    {
+      "title": "パームカーネルエクスペラー",
+      "desc": "高タンパク質含有のパームカーネルエクスペラー、家畜飼料用。",
+      "img": "assets/img/products/palm-kernel-expeller.jpg"
+    }
   ]
 }

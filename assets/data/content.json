@@ -1,15 +1,28 @@
 {
   "id": {
-    "company": "Sawit Corp",
+    "company": "PT Borneo Semoga Berkah",
+    "nav": {
+      "about": "Tentang",
+      "products": "Produk",
+      "testimonials": "Testimoni",
+      "contact": "Kontak"
+    },
+    "whatsapp": "Chat via WhatsApp",
     "hero": {
-      "title": "Sawit Corp",
-      "subtitle": "Mitra terbaik untuk kelapa sawit berkualitas",
-      "hook": "Solusi sawit dari hulu ke hilir",
+      "title": "PT Borneo Semoga Berkah",
+      "subtitle": "Perdagangan bungkil & cangkang kelapa sawit",
+      "hook": "Dari limbah sawit menjadi komoditas bernilai",
       "cta": "Hubungi Kami"
     },
     "about": {
       "title": "Tentang Kami",
-      "desc": "Kami adalah perusahaan yang bergerak di bidang kelapa sawit, menyediakan produk berkualitas tinggi untuk kebutuhan pangan, industri, dan pakan ternak."
+      "desc": "PT Borneo Semoga Berkah (BSB) adalah perusahaan yang bergerak di bidang perdagangan, berfokus pada perdagangan bungkil kelapa sawit dan cangkang kelapa sawit.",
+      "vision": "Menjadi perusahaan terkemuka dalam pengelolaan limbah sawit menjadi bernilai ekonomi.",
+      "mission": [
+        "Mengelola limbah sawit secara berkelanjutan.",
+        "Menyediakan produk berkualitas untuk industri lokal dan ekspor.",
+        "Berperan dalam pelestarian lingkungan."
+      ]
     },
     "products": "Produk",
     "testimonials": {
@@ -28,28 +41,44 @@
     "contact": {
       "title": "Kontak",
       "addressLabel": "Alamat:",
-      "address": "Jl. Perkebunan Sawit No. 123, Riau, Indonesia",
+      "address": "Jl. KH Wahid Hasyim RT 39, Samarinda, Kaltim 75119",
       "phoneLabel": "Telp:",
-      "phone": "+62 812 3456 7890",
+      "phone": "0852 5068 8745",
       "emailLabel": "Email:",
-      "email": "info@sawitcorp.co.id",
-      "whatsapp": "https://wa.me/6281234567890",
-      "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126750.62347854523!2d109.52684038646841!3d-6.895748860045901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70242ca490fe13%3A0xc0c68a126b258cb6!2sPekalongan%2C%20Pekalongan%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1755424753837!5m2!1sen!2sid"
-    }
+      "email": "Hadi@BSB.co.id",
+      "whatsapp": "https://wa.me/6285250688745",
+      "linkedinLabel": "LinkedIn:",
+      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
+      "maps": "https://www.google.com/maps/embed?pb=..."
+    },
+    "footer": "© PT Borneo Semoga Berkah. Semua Hak Dilindungi."
   },
   "en": {
-    "company": "Sawit Corp",
+    "company": "PT Borneo Semoga Berkah",
+    "nav": {
+      "about": "About",
+      "products": "Products",
+      "testimonials": "Testimonials",
+      "contact": "Contact"
+    },
+    "whatsapp": "Chat via WhatsApp",
     "hero": {
-      "title": "Sawit Corp",
-      "subtitle": "Your trusted partner for high-quality palm products",
-      "hook": "Palm solutions from upstream to downstream",
+      "title": "PT Borneo Semoga Berkah",
+      "subtitle": "Palm kernel meal & shell trading",
+      "hook": "Turning palm waste into valuable commodities",
       "cta": "Contact Us"
     },
     "about": {
       "title": "About Us",
-      "desc": "We are a company engaged in palm oil industry, providing high-quality products for food, industry, and animal feed."
+      "desc": "PT Borneo Semoga Berkah (BSB) is a trading company focusing on palm kernel meal and shell.",
+      "vision": "Become a leading company in managing palm waste into economic value.",
+      "mission": [
+        "Manage palm waste sustainably.",
+        "Provide high-quality products for local and export industry.",
+        "Contribute to environmental preservation."
+      ]
     },
-    "products": "Product",
+    "products": "Products",
     "testimonials": {
       "title": "Testimonials",
       "items": [
@@ -66,13 +95,118 @@
     "contact": {
       "title": "Contact",
       "addressLabel": "Address:",
-      "address": "Jl. Perkebunan Sawit No. 123, Riau, Indonesia",
+      "address": "Jl. KH Wahid Hasyim RT 39, Samarinda, East Kalimantan 75119",
       "phoneLabel": "Phone:",
-      "phone": "+62 812 3456 7890",
+      "phone": "+62 852 5068 8745",
       "emailLabel": "Email:",
-      "email": "info@sawitcorp.co.id",
-      "whatsapp": "https://wa.me/6281234567890",
-      "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126750.62347854523!2d109.52684038646841!3d-6.895748860045901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70242ca490fe13%3A0xc0c68a126b258cb6!2sPekalongan%2C%20Pekalongan%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1755424753837!5m2!1sen!2sid"
-    }
+      "email": "Hadi@BSB.co.id",
+      "whatsapp": "https://wa.me/6285250688745",
+      "linkedinLabel": "LinkedIn:",
+      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
+      "maps": "https://www.google.com/maps/embed?pb=..."
+    },
+    "footer": "© PT Borneo Semoga Berkah. All Rights Reserved."
+  },
+  "zh": {
+    "company": "PT Borneo Semoga Berkah",
+    "nav": {
+      "about": "关于我们",
+      "products": "产品",
+      "testimonials": "客户评价",
+      "contact": "联系我们"
+    },
+    "whatsapp": "通过 WhatsApp 聊天",
+    "hero": {
+      "title": "PT Borneo Semoga Berkah",
+      "subtitle": "棕榈仁粕和棕榈壳贸易",
+      "hook": "将棕榈废料变为有价值的商品",
+      "cta": "联系我们"
+    },
+    "about": {
+      "title": "关于我们",
+      "desc": "PT Borneo Semoga Berkah (BSB) 是一家专注于棕榈仁粕和棕榈壳贸易的公司。",
+      "vision": "成为棕榈废料管理和经济化的领先公司。",
+      "mission": [
+        "可持续管理棕榈废料。",
+        "为本地和出口产业提供高质量产品。",
+        "致力于环境保护。"
+      ]
+    },
+    "products": "产品",
+    "testimonials": {
+      "title": "客户评价",
+      "items": [
+        { "quote": "产品质量好，服务非常到位！", "name": "布迪先生，廖内" },
+        { "quote": "值得信赖的合作伙伴。", "name": "萨丽女士，雅加达" }
+      ]
+    },
+    "contact": {
+      "title": "联系我们",
+      "addressLabel": "地址：",
+      "address": "KH Wahid Hasyim 街道 RT 39, 三马林达, 东加里曼丹 75119",
+      "phoneLabel": "电话：",
+      "phone": "+62 852 5068 8745",
+      "emailLabel": "邮箱：",
+      "email": "Hadi@BSB.co.id",
+      "whatsapp": "https://wa.me/6285250688745",
+      "linkedinLabel": "领英:",
+      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
+      "maps": "https://www.google.com/maps/embed?pb=..."
+    },
+    "footer": "© PT Borneo Semoga Berkah。版权所有。"
+  },
+  "ja": {
+    "company": "PT Borneo Semoga Berkah",
+    "nav": {
+      "about": "会社概要",
+      "products": "製品",
+      "testimonials": "お客様の声",
+      "contact": "お問い合わせ"
+    },
+    "whatsapp": "WhatsAppでチャット",
+    "hero": {
+      "title": "PT Borneo Semoga Berkah",
+      "subtitle": "パームカーネルミール・シェルの取引",
+      "hook": "パーム廃棄物を価値ある商品に",
+      "cta": "お問い合わせ"
+    },
+    "about": {
+      "title": "会社概要",
+      "desc": "PT Borneo Semoga Berkah (BSB) はパームカーネルミールとパームカーネルシェルの取引に特化した会社です。",
+      "vision": "パーム廃棄物を経済価値に変えるリーディングカンパニーになる。",
+      "mission": [
+        "パーム廃棄物を持続可能に管理する。",
+        "国内外向けに高品質な製品を提供する。",
+        "環境保護に貢献する。"
+      ]
+    },
+    "products": "製品",
+    "testimonials": {
+      "title": "お客様の声",
+      "items": [
+        {
+          "quote": "品質の良い製品で、サービスも素晴らしい！",
+          "name": "ブディ氏、リアウ"
+        },
+        {
+          "quote": "信頼できる工場のパートナーです。",
+          "name": "サリ夫人、ジャカルタ"
+        }
+      ]
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "addressLabel": "住所：",
+      "address": "KH Wahid Hasyim 通り RT 39, サマリンダ, 東カリマンタン 75119",
+      "phoneLabel": "電話：",
+      "phone": "+62 852 5068 8745",
+      "emailLabel": "メール：",
+      "email": "Hadi@BSB.co.id",
+      "whatsapp": "https://wa.me/6285250688745",
+      "linkedinLabel": "リンクトイン:",
+      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
+      "maps": "https://www.google.com/maps/embed?pb=..."
+    },
+    "footer": "© PT Borneo Semoga Berkah. 無断転載を禁じます。"
   }
 }
