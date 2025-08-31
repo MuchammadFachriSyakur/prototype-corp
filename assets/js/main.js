@@ -1,6 +1,5 @@
-let currentLang = "id"; // default
+let currentLang = "en"; // default
 
-// Load JSON
 async function loadJSON(path) {
   try {
     const res = await fetch(path);
@@ -12,24 +11,40 @@ async function loadJSON(path) {
   }
 }
 
-// Render konten utama
 function renderContent(data) {
   if (!data) return;
 
-  // Navbar + Footer
+  // Navbar
   document.querySelector("#nav-company").innerText = data.company;
   document.querySelector("#site-title").innerText = data.company;
-  document.querySelector("#footer-company").innerText = data.company;
+  document.querySelector("#nav-about").innerText = data.nav.about;
+  document.querySelector("#nav-products").innerText = data.nav.products;
+  document.querySelector("#nav-testimonials").innerText = data.nav.testimonials;
+  document.querySelector("#nav-contact").innerText = data.nav.contact;
 
   // Hero
   document.querySelector("#hero-title").innerText = data.hero.title;
   document.querySelector("#hero-subtitle").innerText = data.hero.subtitle;
-  document.querySelector("#hero-hook").innerText = data.hero.hook;
+  const heroHook = document.querySelector("#hero-hook");
+  if (data.hero.hook && data.hero.hook.trim() !== "") {
+    heroHook.innerText = data.hero.hook;
+    heroHook.classList.remove("d-none");
+  } else heroHook.classList.add("d-none");
   document.querySelector("#hero-cta").innerText = data.hero.cta;
 
   // About
   document.querySelector("#about-title").innerText = data.about.title;
   document.querySelector("#about-desc").innerText = data.about.desc;
+  document.querySelector("#about-vision").innerText = data.about.vision || "";
+  const missionUl = document.querySelector("#about-mission");
+  missionUl.innerHTML = "";
+  if (data.about.mission) {
+    data.about.mission.forEach((m) => {
+      const li = document.createElement("li");
+      li.textContent = "• " + m;
+      missionUl.appendChild(li);
+    });
+  }
 
   // Products
   document.querySelector("#products-title").innerText = data.products;
@@ -64,22 +79,34 @@ function renderContent(data) {
     data.contact.emailLabel;
   document.querySelector("#contact-email").innerText = data.contact.email;
   document.querySelector("#contact-whatsapp").href = data.contact.whatsapp;
+  document.querySelector("#contact-whatsapp").innerText = data.whatsapp;
   document.querySelector("#contact-maps").src = data.contact.maps;
+
+  const linkedinWrap = document.querySelector("#contact-linkedin-wrap");
+  const linkedinLabel = document.querySelector("#contact-linkedin-label");
+  const linkedinLink = document.querySelector("#contact-linkedin");
+  if (data.contact.linkedin && data.contact.linkedin.trim() !== "") {
+    linkedinWrap.classList.remove("d-none");
+    linkedinLabel.innerText = data.contact.linkedinLabel;
+    linkedinLink.href = data.contact.linkedin;
+    linkedinLink.innerText = data.contact.linkedin;
+  } else linkedinWrap.classList.add("d-none");
+
+  // Footer
+  document.querySelector("#footer-text").innerText = data.footer;
 }
 
-// Render produk
-function renderProducts(products) {
-  if (!products) return;
+async function renderProducts(lang) {
+  const products = await loadJSON("assets/data/products.json");
+  if (!products || !products[lang]) return;
   const container = document.querySelector("#products-list");
   container.innerHTML = "";
-
-  products.forEach((p) => {
+  products[lang].forEach((p) => {
     const card = document.createElement("div");
     card.classList.add("col-md-6", "mb-4");
     card.innerHTML = `
       <div class="card h-100 shadow-sm">
-        <img src="${p.img}" class="card-img-top" alt="${p.title}"
-          onerror="this.onerror=null;this.src='assets/img/no-image.png';">
+        <img src="${p.img}" class="card-img-top" alt="${p.title}" onerror="this.onerror=null;this.src='assets/img/no-image.png';" style="height:300px; object-fit:cover;">
         <div class="card-body">
           <h5 class="card-title">${p.title}</h5>
           <p class="card-text">${p.desc}</p>
@@ -89,24 +116,18 @@ function renderProducts(products) {
   });
 }
 
-// Switch bahasa
 async function switchLanguage(lang) {
   currentLang = lang;
   const content = await loadJSON("assets/data/content.json");
-  const products = await loadJSON("assets/data/products.json");
-
   if (content && content[lang]) renderContent(content[lang]);
-  if (products && products[lang]) renderProducts(products[lang]);
+  renderProducts(lang);
 }
 
-// Init
 document.addEventListener("DOMContentLoaded", () => {
   switchLanguage(currentLang);
-
-  document
-    .querySelector("#btn-lang-id")
-    .addEventListener("click", () => switchLanguage("id"));
-  document
-    .querySelector("#btn-lang-en")
-    .addEventListener("click", () => switchLanguage("en"));
+  const langSwitcher = document.querySelector("#lang-switcher");
+  langSwitcher.value = currentLang;
+  langSwitcher.addEventListener("change", (e) =>
+    switchLanguage(e.target.value)
+  );
 });
