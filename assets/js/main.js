@@ -36,6 +36,12 @@ function renderContent(data) {
   document.querySelector("#about-title").innerText = data.about.title;
   document.querySelector("#about-desc").innerText = data.about.desc;
 
+  // Visi, Misi title
+  document.querySelector("#about-mission-title").innerText =
+    data.about.missionTitle;
+  document.querySelector("#about-vision-title").innerText =
+    data.about.visionTitle;
+
   // Vision
   const visionUl = document.querySelector("#about-vision");
   visionUl.innerHTML = "";
