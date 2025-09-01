@@ -35,14 +35,34 @@ function renderContent(data) {
   // About
   document.querySelector("#about-title").innerText = data.about.title;
   document.querySelector("#about-desc").innerText = data.about.desc;
-  document.querySelector("#about-vision").innerText = data.about.vision || "";
+
+  // Vision
+  const visionUl = document.querySelector("#about-vision");
+  visionUl.innerHTML = "";
+  if (data.about.vision) {
+    data.about.vision.forEach((v) => {
+      const item = document.createElement("div");
+      item.className = "list-group-item border-0 d-flex align-items-start";
+      item.innerHTML = `
+      <i class="bi bi-eye-fill text-primary me-2 fs-5"></i>
+      <span class="fs-6 lh-lg">${v}</span>
+    `;
+      visionUl.appendChild(item);
+    });
+  }
+
+  // Mission
   const missionUl = document.querySelector("#about-mission");
   missionUl.innerHTML = "";
   if (data.about.mission) {
     data.about.mission.forEach((m) => {
-      const li = document.createElement("li");
-      li.textContent = "• " + m;
-      missionUl.appendChild(li);
+      const item = document.createElement("div");
+      item.className = "list-group-item border-0 d-flex align-items-start";
+      item.innerHTML = `
+      <i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>
+      <span class="fs-6 lh-lg">${m}</span>
+    `;
+      missionUl.appendChild(item);
     });
   }
 
