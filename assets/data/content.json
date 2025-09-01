@@ -16,6 +16,8 @@
     },
     "about": {
       "title": "Tentang Kami",
+      "visionTitle": "Visi",
+      "missionTitle": "Misi",
       "desc": "PT Borneo Semoga Berkah (BSB) adalah perusahaan yang bergerak di bidang perdagangan, berfokus pada perdagangan bungkil kelapa sawit (Palm Kernel Meal) dan cangkang kelapa sawit (Palm Kernel Shell). Mengingat banyaknya perusahaan kelapa sawit di Indonesia, khususnya di Kalimantan, timbul limbah produksi yang masih dapat dikelola menjadi bernilai ekonomis. BSB hadir untuk mengubah limbah tersebut menjadi komoditi sumber daya terbarukan, sekaligus berkontribusi terhadap lingkungan yang lebih hijau.",
       "vision": [
         "Menjadi perusahaan terkemuka dalam perdagangan cangkang sawit dan bungkil sawit yang berkelanjutan dan bertanggung jawab, serta memberikan nilai tambah bagi para pemangku kepentingan."
@@ -74,6 +76,8 @@
     },
     "about": {
       "title": "About Us",
+      "visionTitle": "Vision",
+      "missionTitle": "Mission",
       "desc": "PT Borneo Semoga Berkah (BSB) is a trading company focusing on palm kernel meal and palm kernel shell. With the vast number of palm oil companies in Indonesia, particularly in Kalimantan, a significant amount of production waste is generated. This waste can still be processed into economic value. BSB transforms this by-product into renewable resources and contributes to a greener environment.",
       "vision": [
         "To become a leading company in sustainable and responsible trading of palm kernel meal and palm kernel shell, while providing added value to stakeholders."
@@ -132,6 +136,8 @@
     },
     "about": {
       "title": "关于我们",
+      "visionTitle": "愿景",
+      "missionTitle": "使命",
       "desc": "PT Borneo Semoga Berkah (BSB) 是一家贸易公司，专注于棕榈仁粕（Palm Kernel Meal）和棕榈壳（Palm Kernel Shell）的贸易。随着印尼特别是加里曼丹地区棕榈油企业的不断增加，产生了大量副产品废弃物。这些副产品仍然可以被再利用并转化为经济价值。BSB 致力于将这些副产品转化为可再生资源，并为更加绿色的环境做出贡献。",
       "vision": [
         "成为一家在可持续和负责任的棕榈仁粕与棕榈壳贸易中处于领先地位，并能为利益相关者创造附加价值的公司。"
@@ -184,6 +190,8 @@
     },
     "about": {
       "title": "会社概要",
+      "visionTitle": "ビジョン",
+      "missionTitle": "ミッション",
       "desc": "PT Borneo Semoga Berkah (BSB) は、パームカーネルミール（Palm Kernel Meal）とパームカーネルシェル（Palm Kernel Shell）の取引に特化した商社です。インドネシア、特にカリマンタン地域には多くのパーム油企業が存在し、その結果、多量の副産物が発生します。これらの副産物は経済的価値に転換可能です。BSB は、この副産物を再生可能資源に変え、より緑豊かな環境に貢献しています。",
       "vision": [
         "持続可能で責任あるパームカーネルミールおよびパームカーネルシェルの取引において、リーディングカンパニーとなり、ステークホルダーに付加価値を提供すること。"
