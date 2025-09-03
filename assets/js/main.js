@@ -1,159 +1,108 @@
-let currentLang = "en"; // default
-
-async function loadJSON(path) {
+let currentLang = "en";
+async function loadJSON(e) {
   try {
-    const res = await fetch(path);
-    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-    return await res.json();
-  } catch (err) {
-    console.error("Gagal load JSON:", path, err);
-    return null;
+    const t = await fetch(e);
+    if (!t.ok) throw new Error(`HTTP error! status: ${t.status}`);
+    return await t.json();
+  } catch (t) {
+    return console.error("Gagal load JSON:", e, t), null;
   }
 }
-
-function renderContent(data) {
-  if (!data) return;
-
-  // Navbar
-  document.querySelector("#nav-company").innerText = data.company;
-  document.querySelector("#site-title").innerText = data.company;
-  document.querySelector("#nav-about").innerText = data.nav.about;
-  document.querySelector("#nav-products").innerText = data.nav.products;
-  document.querySelector("#nav-testimonials").innerText = data.nav.testimonials;
-  document.querySelector("#nav-contact").innerText = data.nav.contact;
-
-  // Hero
-  document.querySelector("#hero-title").innerText = data.hero.title;
-  document.querySelector("#hero-subtitle").innerText = data.hero.subtitle;
-  const heroHook = document.querySelector("#hero-hook");
-  if (data.hero.hook && data.hero.hook.trim() !== "") {
-    heroHook.innerText = data.hero.hook;
-    heroHook.classList.remove("d-none");
-  } else heroHook.classList.add("d-none");
-  document.querySelector("#hero-cta").innerText = data.hero.cta;
-
-  // About
-  document.querySelector("#about-title").innerText = data.about.title;
-  document.querySelector("#about-desc").innerText = data.about.desc;
-
-  // Visi, Misi title
-  document.querySelector("#about-mission-title").innerText =
-    data.about.missionTitle;
-  document.querySelector("#about-vision-title").innerText =
-    data.about.visionTitle;
-
-  // Vision
-  const visionUl = document.querySelector("#about-vision");
-  visionUl.innerHTML = "";
-  if (data.about.vision) {
-    data.about.vision.forEach((v) => {
-      const item = document.createElement("div");
-      item.className = "list-group-item border-0 d-flex align-items-start";
-      item.innerHTML = `
-      <i class="bi bi-eye-fill text-primary me-2 fs-5"></i>
-      <span class="fs-6 lh-lg">${v}</span>
-    `;
-      visionUl.appendChild(item);
+function renderContent(e) {
+  if (!e) return;
+  (document.querySelector("#nav-company").innerText = e.company),
+    (document.querySelector("#site-title").innerText = e.company),
+    (document.querySelector("#nav-about").innerText = e.nav.about),
+    (document.querySelector("#nav-products").innerText = e.nav.products),
+    (document.querySelector("#nav-testimonials").innerText =
+      e.nav.testimonials),
+    (document.querySelector("#nav-contact").innerText = e.nav.contact),
+    (document.querySelector("#hero-title").innerText = e.hero.title),
+    (document.querySelector("#hero-subtitle").innerText = e.hero.subtitle);
+  const t = document.querySelector("#hero-hook");
+  e.hero.hook && "" !== e.hero.hook.trim()
+    ? ((t.innerText = e.hero.hook), t.classList.remove("d-none"))
+    : t.classList.add("d-none"),
+    (document.querySelector("#hero-cta").innerText = e.hero.cta),
+    (document.querySelector("#about-title").innerText = e.about.title),
+    (document.querySelector("#about-desc").innerText = e.about.desc),
+    (document.querySelector("#about-mission-title").innerText =
+      e.about.missionTitle),
+    (document.querySelector("#about-vision-title").innerText =
+      e.about.visionTitle);
+  const n = document.querySelector("#about-vision");
+  (n.innerHTML = ""),
+    e.about.vision &&
+      e.about.vision.forEach((e) => {
+        const t = document.createElement("div");
+        (t.className = "list-group-item border-0 d-flex align-items-start"),
+          (t.innerHTML = `<i class="bi bi-eye-fill text-primary me-2 fs-5"></i><span class="fs-6 lh-lg">${e}</span>`),
+          n.appendChild(t);
+      });
+  const r = document.querySelector("#about-mission");
+  (r.innerHTML = ""),
+    e.about.mission &&
+      e.about.mission.forEach((e) => {
+        const t = document.createElement("div");
+        (t.className = "list-group-item border-0 d-flex align-items-start"),
+          (t.innerHTML = `<i class="bi bi-check-circle-fill text-success me-2 fs-5"></i><span class="fs-6 lh-lg">${e}</span>`),
+          r.appendChild(t);
+      }),
+    (document.querySelector("#products-title").innerText = e.products),
+    (document.querySelector("#testimonials-title").innerText =
+      e.testimonials.title);
+  const o = document.querySelector("#testimonials-list");
+  (o.innerHTML = ""),
+    e.testimonials.items.forEach((e, t) => {
+      const n = document.createElement("div");
+      n.classList.add("carousel-item", ...(0 === t ? ["active"] : [])),
+        (n.innerHTML = `<div class="d-flex flex-column align-items-center"><blockquote class="blockquote text-center"><p class="mb-3">“${e.quote}”</p><footer class="blockquote-footer">${e.name}</footer></blockquote></div>`),
+        o.appendChild(n);
+    }),
+    (document.querySelector("#contact-title").innerText = e.contact.title),
+    (document.querySelector("#contact-address-label").innerText =
+      e.contact.addressLabel),
+    (document.querySelector("#contact-address").innerText = e.contact.address),
+    (document.querySelector("#contact-phone-label").innerText =
+      e.contact.phoneLabel),
+    (document.querySelector("#contact-phone").innerText = e.contact.phone),
+    (document.querySelector("#contact-email-label").innerText =
+      e.contact.emailLabel),
+    (document.querySelector("#contact-email").innerText = e.contact.email),
+    (document.querySelector("#contact-whatsapp").href = e.contact.whatsapp),
+    (document.querySelector("#contact-whatsapp").innerText = e.whatsapp),
+    (document.querySelector("#contact-maps").src = e.contact.maps);
+  const c = document.querySelector("#contact-linkedin-wrap"),
+    a = document.querySelector("#contact-linkedin-label"),
+    i = document.querySelector("#contact-linkedin");
+  e.contact.linkedin && "" !== e.contact.linkedin.trim()
+    ? (c.classList.remove("d-none"),
+      (a.innerText = e.contact.linkedinLabel),
+      (i.href = e.contact.linkedin),
+      (i.innerText = e.contact.linkedin))
+    : c.classList.add("d-none"),
+    (document.querySelector("#footer-text").innerText = e.footer);
+}
+async function renderProducts(e) {
+  const t = await loadJSON("assets/data/products.json");
+  if (!t || !t[e]) return;
+  const n = document.querySelector("#products-list");
+  (n.innerHTML = ""),
+    t[e].forEach((e) => {
+      const t = document.createElement("div");
+      t.classList.add("col-md-6", "mb-4"),
+        (t.innerHTML = `<div class="card h-100 shadow-sm"><img src="${e.img}" class="card-img-top" alt="${e.title}" onerror="this.onerror=null;this.src='assets/img/no-image.png';" style="height:300px; object-fit:cover;" loading="lazy"><div class="card-body"><h5 class="card-title">${e.title}</h5><p class="card-text">${e.desc}</p></div></div>`),
+        n.appendChild(t);
     });
-  }
-
-  // Mission
-  const missionUl = document.querySelector("#about-mission");
-  missionUl.innerHTML = "";
-  if (data.about.mission) {
-    data.about.mission.forEach((m) => {
-      const item = document.createElement("div");
-      item.className = "list-group-item border-0 d-flex align-items-start";
-      item.innerHTML = `
-      <i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>
-      <span class="fs-6 lh-lg">${m}</span>
-    `;
-      missionUl.appendChild(item);
-    });
-  }
-
-  // Products
-  document.querySelector("#products-title").innerText = data.products;
-
-  // Testimonials
-  document.querySelector("#testimonials-title").innerText =
-    data.testimonials.title;
-  const testiContainer = document.querySelector("#testimonials-list");
-  testiContainer.innerHTML = "";
-  data.testimonials.items.forEach((t, idx) => {
-    const div = document.createElement("div");
-    div.classList.add("carousel-item", ...(idx === 0 ? ["active"] : []));
-    div.innerHTML = `
-      <div class="d-flex flex-column align-items-center">
-        <blockquote class="blockquote text-center">
-          <p class="mb-3">“${t.quote}”</p>
-          <footer class="blockquote-footer">${t.name}</footer>
-        </blockquote>
-      </div>`;
-    testiContainer.appendChild(div);
-  });
-
-  // Contact
-  document.querySelector("#contact-title").innerText = data.contact.title;
-  document.querySelector("#contact-address-label").innerText =
-    data.contact.addressLabel;
-  document.querySelector("#contact-address").innerText = data.contact.address;
-  document.querySelector("#contact-phone-label").innerText =
-    data.contact.phoneLabel;
-  document.querySelector("#contact-phone").innerText = data.contact.phone;
-  document.querySelector("#contact-email-label").innerText =
-    data.contact.emailLabel;
-  document.querySelector("#contact-email").innerText = data.contact.email;
-  document.querySelector("#contact-whatsapp").href = data.contact.whatsapp;
-  document.querySelector("#contact-whatsapp").innerText = data.whatsapp;
-  document.querySelector("#contact-maps").src = data.contact.maps;
-
-  const linkedinWrap = document.querySelector("#contact-linkedin-wrap");
-  const linkedinLabel = document.querySelector("#contact-linkedin-label");
-  const linkedinLink = document.querySelector("#contact-linkedin");
-  if (data.contact.linkedin && data.contact.linkedin.trim() !== "") {
-    linkedinWrap.classList.remove("d-none");
-    linkedinLabel.innerText = data.contact.linkedinLabel;
-    linkedinLink.href = data.contact.linkedin;
-    linkedinLink.innerText = data.contact.linkedin;
-  } else linkedinWrap.classList.add("d-none");
-
-  // Footer
-  document.querySelector("#footer-text").innerText = data.footer;
 }
-
-async function renderProducts(lang) {
-  const products = await loadJSON("assets/data/products.json");
-  if (!products || !products[lang]) return;
-  const container = document.querySelector("#products-list");
-  container.innerHTML = "";
-  products[lang].forEach((p) => {
-    const card = document.createElement("div");
-    card.classList.add("col-md-6", "mb-4");
-    card.innerHTML = `
-      <div class="card h-100 shadow-sm">
-        <img src="${p.img}" class="card-img-top" alt="${p.title}" onerror="this.onerror=null;this.src='assets/img/no-image.png';" style="height:300px; object-fit:cover;">
-        <div class="card-body">
-          <h5 class="card-title">${p.title}</h5>
-          <p class="card-text">${p.desc}</p>
-        </div>
-      </div>`;
-    container.appendChild(card);
-  });
+async function switchLanguage(e) {
+  currentLang = e;
+  const t = await loadJSON("assets/data/content.json");
+  t && t[e] && renderContent(t[e]), renderProducts(e);
 }
-
-async function switchLanguage(lang) {
-  currentLang = lang;
-  const content = await loadJSON("assets/data/content.json");
-  if (content && content[lang]) renderContent(content[lang]);
-  renderProducts(lang);
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   switchLanguage(currentLang);
-  const langSwitcher = document.querySelector("#lang-switcher");
-  langSwitcher.value = currentLang;
-  langSwitcher.addEventListener("change", (e) =>
-    switchLanguage(e.target.value)
-  );
+  const e = document.querySelector("#lang-switcher");
+  (e.value = currentLang),
+    e.addEventListener("change", (t) => switchLanguage(t.target.value));
 });
