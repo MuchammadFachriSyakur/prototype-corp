@@ -1,6 +1,11 @@
 {
   "id": {
     "company": "PT Borneo Semoga Berkah",
+    "seo": {
+      "title": "Palm Kernel Shell & Expeller | Eksportir Indonesia",
+      "description": "PalmKernel.co.id adalah eksportir terpercaya Palm Kernel Shell (PKS) dan Palm Kernel Expeller (PKE) dari Indonesia untuk kebutuhan energi biomassa dan pakan ternak internasional.",
+      "keywords": "Palm Kernel Shell, Palm Kernel Expeller, PKS, PKE, ekspor Indonesia, biomassa, pakan ternak"
+    },
     "nav": {
       "about": "Tentang",
       "products": "Produk",
@@ -51,11 +56,11 @@
       "phoneLabel": "Telp:",
       "phone": "0852 5068 8745",
       "emailLabel": "Email:",
-      "email": "Hadi@BSB.co.id",
+      "email": "hadi@pkm.co.id",
       "whatsapp": "https://wa.me/6285250688745",
       "linkedinLabel": "LinkedIn:",
-      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
-      "maps": "https://www.google.com/maps/embed?pb=..."
+      "linkedin": "https://id.linkedin.com/in/abdul-hadi-a1-25190136b",
+      "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.699898754651!2d117.15198407496457!3d-0.4414459995542211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67893faa6d1af%3A0xdab8761f506f4c2d!2sJl.%20KH.%20Wahid%20Hasyim%202%2C%20Kec.%20Samarinda%20Utara%2C%20Kota%20Samarinda%2C%20Kalimantan%20Timur!5e0!3m2!1sid!2sid!4v1758116766073!5m2!1sid!2sid"
     },
     "gallery": {
       "title": "Galeri"
@@ -64,6 +69,11 @@
   },
   "en": {
     "company": "PT Borneo Semoga Berkah",
+    "seo": {
+      "title": "Palm Kernel Shell & Expeller | Indonesian Exporter",
+      "description": "PalmKernel.co.id is a trusted exporter of Palm Kernel Shell (PKS) and Palm Kernel Expeller (PKE) from Indonesia, supplying biomass energy and animal feed worldwide.",
+      "keywords": "Palm Kernel Shell, Palm Kernel Expeller, PKS Exporter, PKE Exporter, Biomass Fuel, Animal Feed, Indonesia Supplier"
+    },
     "nav": {
       "about": "About",
       "products": "Products",
@@ -114,11 +124,11 @@
       "phoneLabel": "Phone:",
       "phone": "+62 852 5068 8745",
       "emailLabel": "Email:",
-      "email": "Hadi@BSB.co.id",
+      "email": "hadi@pkm.co.id",
       "whatsapp": "https://wa.me/6285250688745",
       "linkedinLabel": "LinkedIn:",
-      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
-      "maps": "https://www.google.com/maps/embed?pb=..."
+      "linkedin": "https://id.linkedin.com/in/abdul-hadi-a1-25190136b",
+      "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.699898754651!2d117.15198407496457!3d-0.4414459995542211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67893faa6d1af%3A0xdab8761f506f4c2d!2sJl.%20KH.%20Wahid%20Hasyim%202%2C%20Kec.%20Samarinda%20Utara%2C%20Kota%20Samarinda%2C%20Kalimantan%20Timur!5e0!3m2!1sid!2sid!4v1758116766073!5m2!1sid!2sid"
     },
     "gallery": {
       "title": "Gallery"
@@ -127,6 +137,11 @@
   },
   "zh": {
     "company": "PT Borneo Semoga Berkah",
+    "seo": {
+      "title": "棕榈仁壳与粕 | 印尼出口商",
+      "description": "PalmKernel.co.id 是来自印尼的可靠出口商，供应棕榈仁壳 (PKS) 和棕榈仁粕 (PKE)，用于全球生物质能源和动物饲料。",
+      "keywords": "棕榈仁壳, 棕榈仁粕, PKS 出口, PKE 出口, 生物质燃料, 动物饲料, 印尼供应商"
+    },
     "nav": {
       "about": "关于我们",
       "products": "产品",
@@ -171,11 +186,11 @@
       "phoneLabel": "电话：",
       "phone": "+62 852 5068 8745",
       "emailLabel": "邮箱：",
-      "email": "Hadi@BSB.co.id",
+      "email": "hadi@pkm.co.id",
       "whatsapp": "https://wa.me/6285250688745",
       "linkedinLabel": "领英:",
-      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
-      "maps": "https://www.google.com/maps/embed?pb=..."
+      "linkedin": "https://id.linkedin.com/in/abdul-hadi-a1-25190136b",
+      "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.699898754651!2d117.15198407496457!3d-0.4414459995542211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67893faa6d1af%3A0xdab8761f506f4c2d!2sJl.%20KH.%20Wahid%20Hasyim%202%2C%20Kec.%20Samarinda%20Utara%2C%20Kota%20Samarinda%2C%20Kalimantan%20Timur!5e0!3m2!1sid!2sid!4v1758116766073!5m2!1sid!2sid"
     },
     "gallery": {
       "title": "图库"
@@ -184,6 +199,11 @@
   },
   "ja": {
     "company": "PT Borneo Semoga Berkah",
+    "seo": {
+      "title": "パームカーネルシェル＆エクスペラー | インドネシア輸出業者",
+      "description": "PalmKernel.co.idは、インドネシアからパームカーネルシェル（PKS）とパームカーネルエクスペラー（PKE）を世界中に供給する信頼できる輸出業者です。",
+      "keywords": "パームカーネルシェル, パームカーネルエクスペラー, PKS 輸出, PKE 輸出, バイオマス燃料, 家畜飼料, インドネシア"
+    },
     "nav": {
       "about": "会社概要",
       "products": "製品",
@@ -234,11 +254,11 @@
       "phoneLabel": "電話：",
       "phone": "+62 852 5068 8745",
       "emailLabel": "メール：",
-      "email": "Hadi@BSB.co.id",
+      "email": "hadi@pkm.co.id",
       "whatsapp": "https://wa.me/6285250688745",
       "linkedinLabel": "リンクトイン:",
-      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
-      "maps": "https://www.google.com/maps/embed?pb=..."
+      "linkedin": "https://id.linkedin.com/in/abdul-hadi-a1-25190136b",
+      "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.699898754651!2d117.15198407496457!3d-0.4414459995542211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67893faa6d1af%3A0xdab8761f506f4c2d!2sJl.%20KH.%20Wahid%20Hasyim%202%2C%20Kec.%20Samarinda%20Utara%2C%20Kota%20Samarinda%2C%20Kalimantan%20Timur!5e0!3m2!1sid!2sid!4v1758116766073!5m2!1sid!2sid"
     },
     "gallery": {
       "title": "ギャラリー"

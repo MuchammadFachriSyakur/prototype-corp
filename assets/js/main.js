@@ -11,8 +11,29 @@ async function loadJSON(e) {
 function renderContent(e) {
   if (!e) return;
   (document.querySelector("#nav-company").innerText = e.company),
-    (document.querySelector("#site-title").innerText = e.company),
-    (document.querySelector("#nav-about").innerText = e.nav.about),
+    (document.querySelector("#site-title").innerText = e.seo.title),
+    document
+      .querySelector("#site-description")
+      .setAttribute("content", e.seo.description);
+  document
+    .querySelector("#site-keywords")
+    .setAttribute("content", e.seo.keywords);
+  // Open Graph
+  document
+    .querySelector('meta[property="og:title"]')
+    .setAttribute("content", e.seo.title);
+  document
+    .querySelector('meta[property="og:description"]')
+    .setAttribute("content", e.seo.description);
+
+  // Twitter Card
+  document
+    .querySelector('meta[name="twitter:title"]')
+    .setAttribute("content", e.seo.title);
+  document
+    .querySelector('meta[name="twitter:description"]')
+    .setAttribute("content", e.seo.description);
+  (document.querySelector("#nav-about").innerText = e.nav.about),
     (document.querySelector("#nav-products").innerText = e.nav.products),
     (document.querySelector("#nav-testimonials").innerText =
       e.nav.testimonials),
@@ -79,7 +100,7 @@ function renderContent(e) {
     ? (c.classList.remove("d-none"),
       (a.innerText = e.contact.linkedinLabel),
       (i.href = e.contact.linkedin),
-      (i.innerText = e.contact.linkedin))
+      (i.innerText = "Abdul Hadi"))
     : c.classList.add("d-none"),
     (document.querySelector("#footer-text").innerText = e.footer);
 

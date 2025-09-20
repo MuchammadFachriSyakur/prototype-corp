@@ -3,48 +3,48 @@
     {
       "title": "Cangkang Kelapa Sawit",
       "desc": "Cangkang sawit berkualitas sebagai bahan bakar alternatif ramah lingkungan.",
-      "img": "assets/img/products/cpo.jpg"
+      "img": "assets/img/products/palm-kernel-expeller.jpg"
     },
     {
       "title": "Bungkil Kelapa Sawit",
       "desc": "Bungkil sawit dengan kandungan protein tinggi untuk bahan pakan ternak.",
-      "img": "assets/img/products/palm-kernel-expeller.jpg"
+      "img": "assets/img/products/cpo.jpg"
     }
   ],
   "en": [
     {
       "title": "Palm Kernel Shell",
       "desc": "High quality palm kernel shell as an eco-friendly alternative fuel.",
-      "img": "assets/img/products/cpo.jpg"
+      "img": "assets/img/products/palm-kernel-expeller.jpg"
     },
     {
       "title": "Palm Kernel Expeller",
       "desc": "Palm kernel expeller with high protein content for animal feed.",
-      "img": "assets/img/products/palm-kernel-expeller.jpg"
+      "img": "assets/img/products/cpo.jpg"
     }
   ],
   "zh": [
     {
       "title": "棕榈壳",
       "desc": "高品质棕榈壳，作为环保替代燃料。",
-      "img": "assets/img/products/cpo.jpg"
+      "img": "assets/img/products/palm-kernel-expeller.jpg"
     },
     {
       "title": "棕榈仁粕",
       "desc": "高蛋白含量的棕榈仁粕，用于动物饲料。",
-      "img": "assets/img/products/palm-kernel-expeller.jpg"
+      "img": "assets/img/products/cpo.jpg"
     }
   ],
   "ja": [
     {
       "title": "パームカーネルシェル",
       "desc": "環境に優しい代替燃料としての高品質パームカーネルシェル。",
-      "img": "assets/img/products/cpo.jpg"
+      "img": "assets/img/products/palm-kernel-expeller.jpg"
     },
     {
       "title": "パームカーネルエクスペラー",
       "desc": "高タンパク質含有のパームカーネルエクスペラー、家畜飼料用。",
-      "img": "assets/img/products/palm-kernel-expeller.jpg"
+      "img": "assets/img/products/cpo.jpg"
     }
   ]
 }

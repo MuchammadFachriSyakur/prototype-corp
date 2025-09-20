@@ -8,7 +8,15 @@
     "src": "video1.mp4"
   },
   {
+    "type": "video",
+    "src": "video2.mp4"
+  },
+  {
     "type": "image",
     "src": "foto2.jpg"
+  },
+  {
+    "type": "image",
+    "src": "foto3.jpg"
   }
 ]

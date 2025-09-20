@@ -3,18 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Seo Title & description -->
     <title id="site-title">Sawit Corp</title>
+    <meta
+      id="site-description"
+      name="description"
+      content="Website tentang produk/jasa ... dengan keunggulan ..."
+    />
+
+    <!-- Keyword (optional, tidak sepenting dulu) -->
+    <meta
+      id="site-keywords"
+      name="keywords"
+      content="produk A, jasa B, kota C, dll"
+    />
+
+    <!-- Open Graph (untuk share di sosmed) -->
+    <meta
+      id="og-title"
+      property="og:title"
+      content="Palm Kernel Shell & Expeller Exporter Indonesia"
+    />
+    <meta
+      id="og-description"
+      property="og:description"
+      content="Eksportir terpercaya Palm Kernel Shell (PKS) & Palm Kernel Expeller (PKE) dari Indonesia untuk energi biomassa & pakan ternak."
+    />
+    <meta
+      property="og:image"
+      content="https://palmkernel.co.id/assets/img/hero-1.jpg"
+    />
+    <meta property="og:url" content="https://palmkernel.co.id" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      id="twitter-title"
+      name="twitter:title"
+      content="Palm Kernel Shell & Expeller Exporter Indonesia"
+    />
+    <meta
+      id="twitter-description"
+      name="twitter:description"
+      content="Eksportir terpercaya Palm Kernel Shell (PKS) & Palm Kernel Expeller (PKE) dari Indonesia."
+    />
+    <meta
+      name="twitter:image"
+      content="https://palmkernel.co.id/assets/img/hero-1.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="preload"
       as="font"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2"
       type="font/woff2"
       crossorigin
-    />
+    /> -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -99,7 +154,6 @@
               d="M3.654 1.328a.678.678 0 0 1 1.018-.063l2.29 2.29a.678.678 0 0 1 .063.917L6.29 6.854a.678.678 0 0 0 .145.738l2.829 2.829a.678.678 0 0 0 .738.145l2.382-1.735a.678.678 0 0 1 .917.063l2.29 2.29a.678.678 0 0 1-.063 1.018l-2.29 2.29c-.27.27-.64.376-1.018.29-1.35-.32-4.292-1.636-6.48-3.823-2.187-2.187-3.503-5.13-3.823-6.48-.086-.378.02-.749.29-1.018z"
             />
           </svg>
-          <i class="bi bi-telephone-outbound fs-5"></i>
           <span id="hero-cta">Hubungi Kami</span>
         </a>
       </div>
@@ -117,7 +171,6 @@
           <div class="col-md-5">
             <div class="card shadow-sm p-4 h-100 text-start">
               <div class="text-center mb-3">
-                <i class="bi bi-lightbulb-fill text-warning fs-1"></i>
                 <h5 class="fw-bold mt-2 fs-4" id="about-vision-title">Visi</h5>
               </div>
               <div id="about-vision" class="list-group list-group-flush"></div>
@@ -127,7 +180,6 @@
           <div class="col-md-5">
             <div class="card shadow-sm p-4 h-100 text-start">
               <div class="text-center mb-3">
-                <i class="bi bi-flag-fill text-success fs-1"></i>
                 <h5 class="fw-bold mt-2 fs-4" id="about-mission-title">Misi</h5>
               </div>
               <div id="about-mission" class="list-group list-group-flush"></div>
@@ -141,7 +193,6 @@
     <section id="products" class="py-5 bg-light">
       <div class="container">
         <h2 class="text-center mb-5 fw-bold">
-          <i class="bi bi-box-seam me-2"></i>
           <span id="products-title">Produk</span>
         </h2>
         <div class="row row-cols-1 row-cols-md-2 g-4" id="products-list"></div>
@@ -152,7 +203,6 @@
     <section id="testimonials" class="py-5">
       <div class="container">
         <h2 class="text-center mb-5 fw-bold">
-          <i class="bi bi-chat-quote me-2"></i>
           <span id="testimonials-title">Testimoni</span>
         </h2>
         <div
@@ -225,7 +275,7 @@
               class="btn btn-success btn-lg rounded-pill mt-3 shadow-sm"
               target="_blank"
             >
-              <i class="bi bi-whatsapp me-2"></i> Chat via WhatsApp
+              Chat via WhatsApp
             </a>
           </div>
           <div class="col-md-7">
@@ -246,7 +296,6 @@
     <section id="gallery" class="py-5 bg-white">
       <div class="container">
         <h2 class="text-center mb-5 fw-bold">
-          <i class="bi bi-images me-2"></i>
           <p id="gallery-title">Gallery</p>
         </h2>
         <div class="row justify-content-center g-4" id="gallery-list">
